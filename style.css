@@ -1,4 +1,6 @@
 .container {
+
+    /* https://grid.malven.co/ */
   display: grid;
   gap: 20px;
   /* grid-template-columns: 400px 200px 400px; */
@@ -7,10 +9,28 @@
   /* grid-template-columns: auto 1fr 3fr; */
   grid-template-rows: 1fr;
   /* grid-template-rows: 1fr 2fr 2fr; */
+  grid-auto-flow: column;
 
+  grid-area :2/2/2/6
+
+
+ 
   /* justify-items:self-end; use for make the picture go in row at begin with start or end and more  */
   /* align-items: end; make the picture gbe up or down the space  */
 
+}
+
+.green {
+
+    grid-column: span 2;
+    grid-row: 1/3;
+    /* justify-self: center;  Horizintal */
+    /* align-self: end;  Vertical */
+
+    /* grid-column: 1/-1 ;  until the end  */
+/* grid-column: 1/5; 1 is the start and 4 is the end  */
+    /* grid-column-start:1 ;
+    grid-column-end:3 ; */
 }
 
 .zone {
